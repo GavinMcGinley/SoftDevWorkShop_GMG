@@ -1,6 +1,6 @@
-K06 README
-Cool Dogs
-Ishraq Mahid, Ivan Mijacika, Gavin McGinley
+#K06 README
+##Cool Dogs
+###Ishraq Mahid, Ivan Mijacika, Gavin McGinley
 To read the CSV we used a CSV reader from the csv library, which generates an iterable object of tuples, where each row is a tuple, and each comma separated phrase is a different string. We read this into a dictionary. The dictionary is extremely useful because it allows us to store a reference in relation to certain jobs in bulk, in this case the occupations. We can assign all of these occupations a float, and easily access it later by simply calling the dictionary and the desired key.
 **MARKDOWN**
 *They're all listed online*
