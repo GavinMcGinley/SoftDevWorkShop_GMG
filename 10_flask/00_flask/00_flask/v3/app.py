@@ -13,3 +13,4 @@ def hello_world():
 
 app.debug = True
 app.run()
+#turns on app debugger. Terminal will print "Debug mode: on" instead of "Debug mode: off". Also prints a debugger PIN.
