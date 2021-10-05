@@ -14,3 +14,4 @@ def hello_world():
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
     app.run()
+# Will only run flask app if program is called as main. This module also turns on the debugger, generates a debugger pin, and prints "the __name__ of this module is... " to the terminal.

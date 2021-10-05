@@ -12,4 +12,4 @@ def hello_world():
     return "No hablo queso!"
 
 app.run()
-#has the line "print("about to print __name__...")." This will print "about to print __name__..." to the terminal
+#has the line "print("about to print __name__...")." This will print "about to print __name__..." to the terminal before "__main__"
