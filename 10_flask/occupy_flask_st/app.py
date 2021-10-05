@@ -9,14 +9,14 @@ from randomOcc06 import weighted
 from randomOcc06 import generateListStr
 
 app = Flask(__name__)  # create instance of class Flask
-tnpg = "Cool Dogs - Ishraq Mahid & Fish, Ivan Mijacika & Bob, and Gavin McGinley & Craig"
+tnpg = "<b>Cool Dogs - Ishraq Mahid & Fish, Ivan Mijacika & Bob, and Gavin McGinley & Craig</b>"
 
 @app.route("/")  # assign fxn to route
 
 def hello_world():
     #This code does similar to what is done in v3, with the exception of dealing with cases where the file is imported somewhere else
     
-    return tnpg + "<br>" + 'The selected occupation is: ' + weighted() + "<br>" + generateListStr()
+    return tnpg + "<br>" + 'The selected occupation is:<b> ' + weighted() + "</b><br>" + generateListStr()
 
 
 if __name__ == "__main__":  # true if this file NOT imported
