@@ -1,0 +1,4 @@
+q0.) Removing "render_template" makes it so the 2nd webpage, at '/my_foist_template', can no longer load in, as "render_template" is no longer availabe to create it.
+q1.)Yes, its just URL given in the terminal, followed by the pathing given as app.route above the python function.
+q2.)render_template( 'model_tmplt.html', foo="fooooo", collection=coll)
+'model_tmplt.html' references the html file being used as a template for the page. Foo and collection are both variables in the template, that can be set through "render_template" to change the page.
