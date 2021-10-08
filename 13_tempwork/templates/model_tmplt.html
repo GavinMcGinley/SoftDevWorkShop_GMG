@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> {{ header }} </title>
+  </head>
+
+  <body>
+  Selected Occupation Is: <b>{{randomoc}}</b><br>
+  <table>
+  <tr>
+  <th>Occupation</th>
+  <th>Weighted Percentage</th>
+  </tr>
+    {% for item in collection.keys %}
+    <tr>
+    <td>{{item}}</td>
+    {% p=collection[item]%}
+    <td>{{p}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+  </body>
+
+</html>
+
