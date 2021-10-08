@@ -1,1 +1,5 @@
+Bobby, Craig, & Fish (Ivan Mijacika, Gavin McGinley, Ishraq Mahid)
+SoftDev
+K11 -- Working static webpages/html files
+2021-10-06
 Because the html file is unchanging, and exists constantly in the directory, as opposed to when flask is run with a python program and the html file only exists while the program is running through flask. Flask is only needed to generate html from python; foo.html is already html so it can always be opened.
