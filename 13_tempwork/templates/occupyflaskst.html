@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> {{ header }} </title>
+    <b>{{title}}</b><br>
+  </head>
+
+  <body>
+    <b>{{tnpg}}</b><br>
+    Selected Occupation Is: <b>{{randomoc}}</b><br>
+    <table>
+      <tr>
+        <th>Occupation</th>
+        <th>Weighted Percentage</th>
+      </tr>
+      {% for item in collection.keys() %}
+      <tr>
+        <td>{{item}}</td>
+        <td>{{ collection[item] }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+  </body>
+
+</html>
+
