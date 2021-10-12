@@ -1,0 +1,11 @@
+# Duckfish - Gavin McGinley, Julia Nelson, Tami Takada
+# SoftDev
+# K13 -- Template for Success - We created a template to display a list of occupations and one selected occupation.
+# 2021-10-10
+
+# EGO
+It is important to separate your work from the way that you value yourself, as we are all capable (and frequently make) mistakes.
+If your image of yourself creates a cognitive dissonance with fallibility, then you will struggle to take criticism and thus produce an inferior product.
+
+# Running webistes out of the lab comupters
+In order to run the websites outside of the computer labs, make sure that your own computer has flask downloaded and a copy of the necessary files.
