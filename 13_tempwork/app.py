@@ -7,7 +7,7 @@ from flask import Flask, render_template
 import csv
 import random
 
-
+#reads froms csv into a dictionary, and generates a dictionary including an "other" category, calculated from the csv data
 def read_occupations(filename: str) -> dict:
     occupations = {}
     with open(filename, newline="") as csvfile:
@@ -21,12 +21,12 @@ def read_occupations(filename: str) -> dict:
             occupations[job_class] = float(percentage)
 
     total_percentage = occupations["Total"]
-    occupations["Other"] = 100 - total_percentage
+    occupations["Other"] = round(100 - total_percentage,1)
     del occupations["Total"]
 
     return occupations
 
-
+#randomly picks a key and its data from a dictionary, with the percentages of the csv serving as weights for weighted randomization
 def choose_from_dict(occupations: dict) -> str:
     job_classes = list(occupations.keys())
     percentages = list(occupations.values())
@@ -37,13 +37,13 @@ def choose_from_dict(occupations: dict) -> str:
 
 app = Flask(__name__)
 
-
+#defines tablified webpage route, and feeds python data into template
 @app.route("/occupyflaskst")
 def get_occupations_page():
     collection = read_occupations("data/occupations.csv")
     tnpg="The Fish Ducks: Lia Nelson, Tami Takada, Gavin McGinley"
     return render_template(
-        "occupyflaskst.html",
+        "tablified.html",
         header="Random Occupation",
         title="Random Occupation Generator",
         tnpg=tnpg,
