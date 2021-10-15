@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 
+  # Text Box -- Sadid Ethun, Aaron Contreras, Gavin McGinley
+  # SoftDev
+  # K14 -- Form and Function / Flask Form App
+  # 2021-10-14
+ -->
+
+
+<html>
+
+  <head>
+    <title> Response </title>
+  </head>
+
+  <body style="background-color:powderblue;">
+    <h2>
+      Text Box: Sadid Ethun, Aaron Contreras, Gavin McGinley
+    </h2>
+    <p>
+      <h3>
+      Greetings user! You have successfully submitted the form. 
+      <br>
+      Here, take a cookie.
+      </h3>
+    <img src="https://lh3.googleusercontent.com/proxy/OEZHR5WPjxZeLvehyGrXTCbdv6jG9kzRY9lZ5MBwGYomHEbQjhAVjEZam5IJpbMox_BhCa0Mq4VgrkxKJb1nmaAzvCV-Jmy-z6-yZ8JuET31LgMGsmBCLFeINghvKLgDktKcw0sutezsl8NI0t6G3yvzbPNFo0Ut" 
+    alt="Cookie" width="50" heigh="50">
+    <br><br>
+    <b>Username Entered:</b>
+    {{ request.args['username'] }} <!-- This can also be done through app.py by storing it as a variable in python and sending it to the html as another field in render_template -->
+    <br><br>
+    <b>Request Method Used:</b>
+    {{ request.method }}
+    <br><br>
+    
+    </p>
+    <br>
+  </body>
+
+</html>
+
+

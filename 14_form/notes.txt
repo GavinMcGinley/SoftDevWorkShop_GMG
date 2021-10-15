@@ -1,0 +1,15 @@
+Text Box - Aaron Contreras, Sadid Ethun, Gavin McGinley
+SoftDev
+K14 -- Form and Function/Flask input/took user input from HTML file into python using flask
+2021-10-14
+
+Comments:
+
+- The data obtained from the website is stored in a python dictionary. The key is the name defined in the HTML file, and the value is the user input. 
+
+- Data is passed to the app through a query, the python command request args extracts the data from the query, putting it into the dictionary.
+
+- the request method command will return the type of method used to take the data, which is by default GET. 
+
+- the request.args[] function is part of jinja and can be put directly into the HTML without passing it through the python.
+
