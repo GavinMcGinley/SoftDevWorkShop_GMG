@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+  # Text Box -- Sadid Ethun, Aaron Contreras, Gavin McGinley
+  # SoftDev
+  # K15 -- Sessions Greetings / Flask Form and Error Handling
+  # 2021-10-18
+ -->
+
+
+ <html>
+
+  <head>
+    <title> LOGIN PAGE </title>
+  </head>
+
+  <body style="background-color:powderblue;">
+    <h2>
+      Text Box: Sadid Ethun, Aaron Contreras, Gavin McGinley
+    </h2>
+    <h1>
+      Welcome, Travelers of the Intertoobz!
+    </h1>
+
+
+    <h3>
+      Enter your username and password below to proceed.
+    </h3>
+    <p style="color:red;"> <b>{{k}}</b></p>
+    <form action="/auth"> <!-- This tells app.py the route to go to after the request is handled -->
+      <input type="text" name="username" placeholder="username">
+      <br>
+      <input type="text" name="password" placeholder="password">
+      <br>
+      <input type="submit" name="sub1">
+    </form>
+    <br>
+  </body>
+
+</html>
