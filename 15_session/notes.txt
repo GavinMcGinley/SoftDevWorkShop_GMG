@@ -1,0 +1,11 @@
+Text Box -- Sadid Ethun, Aaron Contreras, Gavin McGinley
+SoftDev
+K15 -- Sessions Greetings / Flask Form and Error Handling
+2021-10-18
+
+GET VS POST
+The GET request method stores the data in the URL while the POST method doesn't. 
+GET is used to request data, while POST is used to send data to the server. 
+
+COOKIES
+
