@@ -23,6 +23,7 @@ def disp_loginpage():
     if session['username']:
         return render_template('welcome.html', username=session['username'], method=request.method,
                                password=session['password'])
+    #else sends to login page
     return render_template( 'login.html' )
 
 
@@ -40,6 +41,7 @@ def authenticate():
     else:
         return render_template('fail.html', k="Incorrect Password for "+request.args['username'])
 @app.route('/logout')
+#clears session
 def logout():
     session.pop('username');
     session.pop('password')
