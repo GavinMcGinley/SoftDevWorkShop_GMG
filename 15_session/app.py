@@ -2,6 +2,7 @@
 # SoftDev
 # K15 -- Sessions Greetings / Flask Form and Error Handling
 # 2021-10-18
+import os
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -11,7 +12,7 @@ from flask import session
 #from flask import Flask, render_template, request
 
 app = Flask(__name__)    #create Flask object
-app.secret_key= "unguessable" #pretty good huh
+app.secret_key= "stuff"#pretty good huh
 
 #only current login is sethun20 with password set as hello
 user = 'sethun20'
@@ -20,7 +21,7 @@ pwd = 'hello'
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
     #sends to welcome page if user is signed in
-    if session['username']:
+    if session:
         return render_template('welcome.html', username=session['username'], method=request.method,
                                password=session['password'])
     #else sends to login page
