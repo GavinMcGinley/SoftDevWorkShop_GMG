@@ -1,0 +1,14 @@
+Text Box -- Sadid Ethun, Aaron Contreras, Gavin McGinley
+SoftDev
+K15 -- Database Creation/SQLite
+2021-10-21
+- Cursor is needed to run SQLite commands : sqlite commands are given by the python code to the cursor, which is what actually performs them on the database.
+- Sqlite can be opened with "$ sqlite3 <dbfilename>", which lets you manually access the database outside of python.
+- SQLite databases are external, and exist outside the python run, so running a python program twice will make is so the database has 2 instances of everyone in the table.
+-print(c.fetchall())  to print in python
+- the c.executemany command can be used to fill out multiple rows in a table, it inputs an array of tuples. 
+- Leaving a field empty in the insert function leaves that field blank on the table
+-What are the [2]+/[1]+ after running shell commands?
+-What's the best way to view the DB?
+
+
