@@ -20,12 +20,17 @@ pwd = 'hello'
 
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
-    #sends to welcome page if user is signed in
-    if session:
-        return render_template('welcome.html', username=session['username'], method=request.method,
-                               password=session['password'])
-    #else sends to login page
-    return render_template( 'login.html' )
+
+    k=""
+    next=""
+    if (request.args["sub1"]=="Submit Query"):
+    	if (request.args['username'] != user):
+    		k+= "Username Doesn't Exist"
+    	elif (request.args['password'] != pwd):
+    		k+="Wrong Password for" + request.args['username']
+    	
+    return render_template( 'login.html')
+
 
 
 @app.route("/auth") # , methods=['GET', 'POST'])
