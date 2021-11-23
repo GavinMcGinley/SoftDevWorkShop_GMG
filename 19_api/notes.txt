@@ -1,0 +1,7 @@
+TNPG: TBD Shyne Choi, Gavin McGinley
+SoftDev
+K19 -- A RESTful Journey Skyward / Rest APIs & Flask
+2021-11-23
+time spent: .7
+- Use requests module to pull json from API. Json module can be used to make the data easier to interact with. Json is essentially a dictionary.
+- <img src= > renders image based on link to the website
