@@ -6,6 +6,9 @@
 
 import requests
 import json
+#put your key here
+key=""
+
 
 from flask import Flask, render_template   #facilitate jinja templating
 
@@ -14,7 +17,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def NASA_key():
-    response = requests.get("https://api.nasa.gov/planetary/apod?api_key=raiDIxthlOrCM674foS7H7izLC5CLhzQQohPsZg7")
+    response = requests.get(key)
     data = json.loads(response.content) #more usable dict
     #then return the template with image and explanation
     return render_template("main.html", pic=data["url"], explanation=data["explanation"]);
