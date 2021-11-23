@@ -1,0 +1,30 @@
+  	  body{
+  	  background-color:#757575;
+  	  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+  	  }
+  	  .head{
+  	  background-color: #b0b0b0;
+  	  color:white;
+  	  text-align: center;
+  	  margin: 0
+  	  }
+  	  .column{
+  	  float: left;
+  	  padding: 10px 100px 10px 10px
+  	  }
+  	  .column ul{
+  	  list-style-type:none;
+  	  color:white;
+  	  }
+  	  .genstuff{
+  	  float:left;
+  	  width:50%;
+  	  }
+  	  .bottom{
+  	  text-align:right;
+  	  color: gray;
+  	  padding: 20px 20px 20px 20px;
+  	  background-color:#303030;
+  	  clear: both;
+  	  }

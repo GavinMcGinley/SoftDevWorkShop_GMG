@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Clyde "Thluffy" Sinclair
-       SoftDev pd0
-       K18 -- CSS basics
-       2021-11-23t
-
-	 WORK FILE for CSS 	
+  <!-- Shyne Choi, Gavin McGinley
+  SoftDev
+  k18 -- css in html, various css implementations
+  2021-11-22
+  1.5 hours
+  Used: https://heisenbergipsum.com/
     -->
-  <style>
-  	.backing{
-  	background-color: #7a7a7a
-  	}
-  	.head{
-  	background-color: #b0b0b0; 
-  	color:white;
-  	}
-  	.therest{
-  	background-color:  #696969
-  	}
-  	.column{
-  	width:100px
-  	}
-  	.columnstuff{
-  	color:white;
-  	}
-  	
+
   	
   <head>
     <meta charset="utf-8"/>
     <title>foo title</title>
+    <style>
+
+  	  body{
+  	  background-color:#757575;
+  	  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+  	  }
+  	  .head{
+  	  background-color: #b0b0b0;
+  	  color:white;
+  	  text-align: center;
+  	  margin: 0
+  	  }
+  	  .column{
+  	  float: left;
+  	  padding: 10px 100px 10px 10px
+  	  }
+  	  .column ul{
+  	  list-style-type:none;
+  	  color:white;
+  	  }
+  	  .genstuff{
+  	  float:left;
+  	  width:50%;
+  	  }
+  	  .bottom{
+  	  text-align:right;
+  	  color: gray;
+  	  padding: 20px 20px 20px 20px;
+  	  background-color:#303030;
+  	  clear: both;
+  	  }
+  	</style>
   </head>
 
   <body>
-    <h1>foo heading 1</h1>
-    <h3>nav foo</h3>
-    <ul>
-      <li><a href="">dis</a></li>
-      <li><a href="">dat</a></li>
-      <li><a href="">de udda ting</a></li>
-    </ul>
+
+      <div class="head">
+        <h1>foo heading 1</h1>
+      </div>
+      <div class="column">
+      <h3>nav foo</h3>
+      <ul>
+      <li><a href=""; style="color:white">dis</a></li>
+      <li><a href=""; style="color:white">dat</a></li>
+      <li><a href=""; style="color:white">de udda ting</a></li>
+      </ul>
+      </div>
+    <div class="genstuff">
     <h2>main foo heading</h2>
-    <p>tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk 
+    <p>
+     You asked me if we were in the meth business or the money business. Neither, I’m in the empire business. I was under the impression that you had this under control. Well, that's what this is - problem solving. Skyler this is a simple division of labor - I bring in the money, you launder the money. This is what you wanted.
 
+Who are you talking to right now? Who is it you think you see? Do you know how much I make a year? I mean, even if I told you, you wouldn't believe it. Do you know what would happen if I suddenly decided to stop going into work?
+
+A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!
+
+Did he speak to you? Would you just answer? What things? What people? A month ago, Gus was trying to kill both of us. And now, he pulls you out of the lab and employs you as... what... a, an assistant gunman? A tough guy? Does that make any sense to you? He says he sees something in you. What kind of game is he playing. Does he think you're that naïve? He can't truly think that you'd forget... let alone Gale, let alone Victor... and all the horror that goes along with all of that. </p>
+
+      </div>
       <br>
       <br>
 
-      Copyright &copy; 2021 Gavin McGinley
-
+    <div class="bottom">
+      Copyright &copy; 2021 Gavin McGinley & Shyne Choi
+    </div>
   </body>
-
 </html>
